@@ -42,7 +42,25 @@ Check for RUN entries on Window Registry to check if the adversary created a per
 - The malicious entry the adversary created is "CleanUpController"
 - ImagePath: C:\Users\tcm\Downloads\wininit.exe
 
-  
+Use AutoRun(SysInternals) to identify backdoor service installed by the attackers
+
+![Screenshot 2025-02-24 162937](https://github.com/user-attachments/assets/491e8ae4-73b4-4457-ae81-3872bf798a8e)
+![Screenshot 2025-02-24 162733](https://github.com/user-attachments/assets/ce06cc10-ef91-4407-9ec9-f8aec02b5c01)
+
+- The backdoor service installed by the attacker is WindowsActiveService (in yellow)
+- START_TYPE configuration = Auto_Start
+- Full BinaryPath= C:\Users\tcmlab\Documents\svcbackdoor.exe
+
+Utilize AutoRuns to see any scheduled tasks created by the adversary
+![Screenshot 2025-02-24 162334](https://github.com/user-attachments/assets/4d2faf82-53ae-49e3-bb3b-e37cfce370cc)
+
+- \ayttpnzc (scheduled task created)
+- Executable FullPath= C:\Users\tcmlab\Downloads\beac0n.exe
+
+
+
+
+
 
 
 
